@@ -1,0 +1,175 @@
+.dashboard-content {
+  background-color: #111813;
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+}
+
+.dashboard-content .HeadHTU{
+    text-align: center;
+    margin: 8px;
+}
+
+.dashboard-content .PHTU{
+    text-align: center;
+}
+
+.dashboard-content .step-description{
+    color: #9DB9A6;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.howto-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.howto-card {
+  background-color: #1A241E;
+  border: 2px solid #3B5443;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.step-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #11D542;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.step-number span:first-child{
+    background-color: #9db9a6;
+    padding: 7px 10px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.step-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #9DB9A6;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.step-description {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.step-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #3B5443;
+}
+
+.final-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1A241E;
+  border: 2px solid #3B5443;
+  border-radius: 8px;
+  padding: 30px; 
+  margin-top: 40px;
+  grid-column: span 2; 
+}
+
+.final-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.final-text h4 {
+  font-size: 22px;
+  color: #9DB9A6;
+  margin-bottom: 10px;
+}
+
+.final-text p {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.final-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #3B5443;
+}
+
+.end-section {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.end-section h3 {
+  color: #9DB9A6;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.end-section p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.end-button {
+  background-color: #3B5443;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.end-button:hover {
+  background-color: #11D542; 
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.dashboard-layout {
+  display: flex; 
+}
+
+.main-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+.HowToUse-dashboard-content{
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}

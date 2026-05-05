@@ -1,0 +1,205 @@
+:root {
+  --bg-gradient: radial-gradient(circle at 0% 0%, #123622 0%, #07180f 55%);
+  --surface-1: #132c20;
+  --surface-2: #0f241a;
+  --surface-3: #203a2d;
+  --border-color: #284938;
+  --border-soft: #355845;
+  --text-primary: #e8f3eb;
+  --text-muted: #96b1a2;
+  --accent: #1f8f4b;
+  --accent-strong: #2fe377;
+  --danger: #f37584;
+  --warning: #ffd35f;
+  --radius-sm: 7px;
+  --radius-md: 10px;
+  --shadow-soft: 0 6px 18px rgba(2, 9, 6, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(1.04);
+}
+
+input,
+select,
+textarea {
+  outline: none;
+  border: 1px solid var(--border-soft);
+  background: #0e2017;
+  color: var(--text-primary);
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+.dashboard-content,
+.analysis-main,
+.camera-new-main,
+.settings-new-main,
+.worker-new-main,
+.notif-v2-main,
+.notif-opt-main,
+.add-worker-v2-main,
+.instructions-main {
+  background: var(--bg-gradient);
+}
+
+@media (max-width: 1200px) {
+  .dashboard-content,
+  .analysis-main,
+  .camera-new-main,
+  .settings-new-main,
+  .worker-new-main,
+  .notif-v2-main,
+  .notif-opt-main,
+  .add-worker-v2-main,
+  .instructions-main,
+  .help-main,
+  .api-docs-main {
+    padding: 14px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-section-dash,
+  .analysis-grid,
+  .camera-new-grid,
+  .worker-new-layout,
+  .help-grid,
+  .instructions-grid,
+  .api-function-grid,
+  .alert-type-grid,
+  .summary-cards,
+  .form-row,
+  .row-two {
+    grid-template-columns: 1fr !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .alerts-area,
+  .content-area,
+  .worker-list,
+  .worker-details {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .camera-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .camera-new-header,
+  .notif-v2-top,
+  .notif-opt-header,
+  .header-actions,
+  .section-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .instructions-hero h1,
+  .camera-new-header h1,
+  .settings-new-header h1,
+  .worker-new-main h1,
+  .analysis-container h1,
+  .notif-v2-top h1,
+  .notif-opt-header h1,
+  .help-hero h1,
+  .api-docs-hero h1 {
+    font-size: 30px !important;
+  }
+
+  .instruction-card.wide-card {
+    grid-column: span 1 !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 8px 10px !important;
+  }
+
+  .dashboard-header h2 {
+    font-size: 13px !important;
+  }
+
+  .camera-new-thumb {
+    width: 120px !important;
+    height: 64px !important;
+  }
+
+  .preview-image-wrap img {
+    height: 180px !important;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .worker-actions,
+  .add-worker-actions-v2,
+  .notif-opt-actions,
+  .notif-v2-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100%;
+  }
+
+  .worker-actions > div {
+    width: 100%;
+  }
+
+  .worker-actions button,
+  .add-worker-actions-v2 button,
+  .notif-opt-actions button,
+  .notif-v2-actions button {
+    width: 100%;
+  }
+
+  .api-table {
+    font-size: 11px;
+  }
+}

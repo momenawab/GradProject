@@ -1,0 +1,46 @@
+.dashboard-header {
+  color: var(--text-primary);
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, #0a1c12 0%, #0a2014 100%);
+  backdrop-filter: blur(6px);
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  color: var(--text-primary);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #d9e9de;
+  background: #11291e;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background: #183626;
+}
+
+.profile-btn {
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+}

@@ -1,0 +1,278 @@
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  background: radial-gradient(circle at 0% 0%, #123622 0%, #07180f 55%);
+  color: #e8f3eb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.main-section-dash {
+  display: flex;
+  flex: 1;
+  gap: 14px;
+  padding: 12px 14px 14px;
+  flex-direction: row;
+}
+
+.content-area {
+  flex: 1.45;
+  display: flex;
+  flex-direction: column;
+}
+
+.alerts-area {
+  flex: 0.62;
+  display: flex;
+  flex-direction: column;
+  background: #0f251a;
+  border: 1px solid #1c3d2b;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.alerts-area h3 {
+  margin: 2px 0 12px;
+  font-size: 18px;
+  color: #f2f8f3;
+}
+
+.alerts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.alert-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #1a3325;
+  border: 1px solid #2d4e3b;
+  margin-bottom: 9px;
+  padding: 9px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.alert-card img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.alert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.alert-info strong {
+  font-size: 12px;
+}
+
+.alert-info div {
+  font-size: 10px;
+  color: #b8c8be;
+}
+
+.alert-info .timestamp {
+  font-size: 9px;
+  color: #8fa79a;
+}
+
+.alert-card.critical {
+  border-color: #813127;
+  background: #33211d;
+}
+
+.alert-card.warning {
+  border-color: #8e6d21;
+  background: #332b1b;
+}
+
+.alert-card.critical .alert-info strong {
+  color: #f87266;
+}
+
+.alert-card.warning .alert-info strong {
+  color: #efba42;
+}
+
+.alert-card.normal .alert-info strong {
+  color: #f4f7f5;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section-header h3 {
+  margin: 0;
+  color: #f5fff7;
+  font-size: 31px;
+  font-weight: 700;
+}
+
+.manage-btn {
+  background-color: #1d3a2b;
+  color: #dbeade;
+  border: 1px solid #315340;
+  padding: 8px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.summary-cards {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.summary-card {
+  background: #142d21;
+  border: 1px solid #264635;
+  border-radius: 8px;
+  padding: 12px;
+  flex: 1;
+  color: #fff;
+}
+
+.summary-card h4 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #a6bdae;
+}
+
+.summary-card p {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+}
+
+.summary-card .trend {
+  margin-top: 5px;
+  font-size: 11px;
+  display: block;
+}
+
+.summary-card .trend.up {
+  color: #24d267;
+}
+
+.summary-card .trend.down {
+  color: #f87563;
+}
+
+.camera-filters {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.filter {
+  background: #1c3528;
+  border: 1px solid #315240;
+  color: #d7e6db;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.filter.active {
+  background-color: #1f8f4b;
+  color: #effbf3;
+  border-color: #37aa68;
+}
+
+.camera-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.camera-card {
+  background-color: #132c20;
+  border: 1px solid #2d4f3c;
+  border-radius: 8px;
+  padding: 6px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.camera-card.ok {
+  border-color: #23a95e;
+}
+
+.camera-card.alert {
+  border-color: #8f2b25;
+}
+
+.camera-card.warning {
+  border-color: #b1831b;
+}
+
+.camera-image-wrap {
+  position: relative;
+}
+
+.camera-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.detection-box {
+  position: absolute;
+  left: 20%;
+  top: 28%;
+  width: 30%;
+  height: 42%;
+  border: 2px solid #24d267;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.camera-header-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  align-items: center;
+}
+
+.camera-header-info strong {
+  font-size: 13px;
+  color: #f3faf5;
+}
+
+.camera-header-info .timestamp {
+  font-size: 10px;
+  color: #94aa9e;
+}

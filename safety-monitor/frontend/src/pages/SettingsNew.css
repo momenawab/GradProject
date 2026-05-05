@@ -1,0 +1,124 @@
+.settings-new-main {
+  flex: 1;
+  min-height: 100vh;
+  padding: 18px 18px 16px;
+  background: radial-gradient(circle at 0% 0%, #123622 0%, #07180f 55%);
+  color: #e8f3eb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.settings-new-header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+.settings-new-header p {
+  margin: 4px 0 14px;
+  color: #95af9f;
+  font-size: 12px;
+}
+
+.settings-section {
+  margin-bottom: 14px;
+}
+
+.settings-section h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.settings-panel {
+  background: #132c20;
+  border: 1px solid #284938;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.settings-row {
+  width: 100%;
+  background: transparent;
+  color: inherit;
+  border: 0;
+  border-bottom: 1px solid #254434;
+  padding: 12px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.settings-row:last-child {
+  border-bottom: none;
+}
+
+.settings-row strong {
+  display: block;
+  font-size: 13px;
+  color: #f2fbf5;
+}
+
+.settings-row span {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: #9ab3a5;
+}
+
+.settings-row svg {
+  color: #8ba598;
+  font-size: 12px;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 42px;
+  height: 22px;
+  display: inline-block;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch span {
+  position: absolute;
+  inset: 0;
+  background: #4b5a51;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toggle-switch span::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  background: #f6fffa;
+  transition: 0.2s;
+}
+
+.toggle-switch input:checked + span {
+  background: #20b15b;
+}
+
+.toggle-switch input:checked + span::before {
+  transform: translateX(20px);
+}
+
+.settings-dashboard-btn {
+  margin-top: 10px;
+  border: 1px solid #33ad68;
+  background: #2fe377;
+  color: #032213;
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
